@@ -6,7 +6,7 @@ def ID_CODIGO():
         else:
             return codigo
 
-def ID_NOMBRE():
+def NOMBRE():
     while True:
         nombre = input("Nombre del Cliente: ")
         if nombre == "":
@@ -216,7 +216,7 @@ while True:
         opcion = -1
 
     if opcion == 1:
-        clientes.append((ID_CODIGO(),ID_NOMBRE(), INGRESAR_DIRECCION(),INGRESAR_TELEFONO()))
+        clientes.append((ID_CODIGO(), NOMBRE(), INGRESAR_DIRECCION(), INGRESAR_TELEFONO()))
     elif opcion == 2:
         ImprimirClientes()
     elif opcion == 3:
